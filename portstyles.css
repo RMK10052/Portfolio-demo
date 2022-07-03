@@ -1,0 +1,308 @@
+html{
+    scroll-behavior: smooth;      /*Smooth scroll*/
+}
+body,ul,li,a,h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+nav{                              /*Full navigation*/
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    padding: 20px 100px;
+    z-index: 1;
+}
+nav ul{                           /*4 nav tabs*/
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 30px 30px;
+}
+nav li {                         /*Each nav line*/
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+nav li a{                       /*each nav tab*/
+    font-size: 30px;
+    color: rgb(255, 5, 180);
+    text-decoration: none;
+    background-color: rgb(117, 230, 211);
+    padding: 15px;
+    border: 4px solid darkblue;
+    border-radius: 15px;
+}
+nav li a:hover{               /*Hover each nav tab*/
+    color: blue;
+    position: relative;
+    top: 2px;
+} 
+.logo img{                     /*Port logo*/
+    height:90px;
+    width: 165px;
+    position: fixed;
+    top: 24px;
+    left: 100px;
+    z-index: 2;
+}
+
+
+.home{                      /*full home page*/
+    background-color: rgb(192, 239, 123);
+    z-index: -1;
+    height: 900px;
+}
+.home img{               /*Male portfolio image*/
+    position: relative;
+    left: 1200px;
+    top: 80px;
+    height: 700px;
+    width: 400px;
+}
+.home div{                   /*Home text*/
+    position: relative;
+    bottom: 550px;
+    left: 300px;
+    max-width: 800px;
+    font-size: 30px;
+}
+.home div h2{                /*Home h2*/
+    color: orangered;
+    position: relative;
+    left: 200px;
+}
+.home div h3{                /*Home h3*/
+    color: brown;
+    position: relative;
+    left: 200px;
+}
+.home div h1{                /*Home h1*/
+    color: darkviolet;
+    position: relative;
+    left: 200px;
+    font-size: 2em;
+}
+.home button{                   /*Contact me button*/
+    background-color: rgb(238, 63, 63);
+    color: white;
+    position: relative;
+    bottom: 500px;
+    left: 500px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 10px;
+}
+.home button:hover{                /*Contact me button hover*/
+    background-color: red;
+}
+.home button:active{
+    background-color: darkred;     /*Contact me button active*/
+}
+
+.cont1{                               /*Full flex container*/
+    background-color: rgb(192, 239, 123);
+}
+.cont1 h1{                          /*MY PROJECTS heading*/
+    text-align: center;
+    font-size: 50px;
+    color: magenta;
+}
+.imgarea1,.imgarea2{                           /*Whole image area*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont1 img{                        /*Each image*/
+    padding: 20px 20px;
+    height: 300px;
+    width: 500px;
+}
+
+.imgtitle1 h2{                  /*All titiles in row 1*/                    
+    display: inline-block;
+    padding: 20px 150px;
+    color: maroon;
+}
+.imgtitle1 .i1{                   /*Project title 1*/
+    position: relative;
+    right: 30px;
+}
+.imgtitle1 .i2{                /*Project title 2*/
+    position: relative;
+    right: 35px;
+}
+.imgtitle1 button{                 /*All buttons in row 1*/
+    padding: 10px 35px;
+    background-color:yellow;
+    color: darkmagenta;
+    font-size: 30px;
+    border-radius: 7%;
+}
+.imgtitle1 .i1 button{          /*Visit button 1*/
+    position: relative;
+    left: 30px;    
+}
+.imgtitle1 .i2 button{         /*Visit button 2*/
+    position: relative;
+    left: 70px;    
+}
+.imgtitle1 .i3 button{           /*Visit button 3*/
+    position: relative;
+    right: 3px;    
+}
+
+
+.imgtitle2 h2{                /*All project titles in row 2*/
+    display: inline-block;
+    padding: 20px 150px;
+    color: maroon;
+}
+.imgtitle2 .i4{                 /*Project title 4*/
+    position: relative;
+    left: 150px;
+}
+.imgtitle2 .i5{               /*Project title 5*/            
+    position: relative;
+    left: 270px;
+}
+.imgtitle2 .i6{             /*Project title 6*/              
+    position: relative;
+    left: 370px;
+}
+.imgtitle2 button{         /*All buttons in row 2*/               
+    padding: 10px 35px;
+    background-color:yellow;
+    color: darkmagenta;
+    font-size: 30px;
+    border-radius: 7%;
+}
+.imgtitle2 .i4 button{             /*Visit button 4*/
+    position: relative;
+    left: 0px;    
+}
+.imgtitle2 .i5 button{            /*Visit button 5*/
+    position: relative;
+    right: 10px;    
+}
+.imgtitle2 .i6 button{             /*Visit button 6*/
+    position: relative;
+    left: 15px;   
+}
+
+
+.cont1 button:focus{               /*Visit button focus*/
+    color: white;
+    background-color: darkgreen;
+}
+
+div img:hover {                   /*Project images hover*/
+    opacity: 0.6;
+}
+.imgtitle1 button:hover, .imgtitle2 button:hover{     /*All visit buttons hover*/
+    background-color: red;
+    color:white;
+}
+
+/*--------------------------------Skills and Achievements-------------------------------------*/
+
+
+
+#Contact img{                      /*Contact background image*/
+    max-width: 2000px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#Contact h1{                   /*Contact me heading*/
+    position: relative;
+    bottom: 950px;
+    text-align: center;
+    color: #774360;
+    font-size: 4em;
+}
+
+#Contact form{                           /*Form in contact*/
+    position: relative;
+    bottom: 800px;
+}
+#Contact form input{                          /*All input boxes in contact*/
+    border: 2px solid rgb(10, 6, 145);
+}
+
+#Name{                             /*name input box*/
+    position: absolute;
+    left: 300px;
+    width: 20%;
+    height: 60%;
+    background-color: transparent;
+    border-radius: 10px;
+}
+#email{                            /*email input box*/
+    position: absolute;
+    left: 300px;
+    width: 20%;
+    height: 60%;
+    top: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#Date{                          /*Date input box*/
+    position: absolute;
+    left: 300px;
+    width: 20%;
+    height: 60%;
+    top: 270px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#Message{                           /*Message input box*/
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+    height: 400%;
+    width: 30%;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+
+form h3{                     /*Appointment date text*/
+    position: absolute;
+    top: 230px; 
+    left: 300px;
+    color: red;
+    font-size: 1.5em; 
+}
+#submit{                       /*Submit button*/
+    position: absolute;
+    top: 400px;
+    left: 890px;
+    color: darkorchid;
+    height: 100%;
+    width: 10%;
+    font-size: 2em;
+    background-color: transparent;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#submit:hover{                   /*Submit button hover*/
+    background-color: red;
+    color: white;
+}
+#submit:focus{                   /*Submit button focus*/
+    background-color: #fff;
+}
+::placeholder{             /*All placeholders*/
+    color: green;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+/*---------------------------------------Media Queries----------------------------------------------*/
